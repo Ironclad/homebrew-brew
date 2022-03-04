@@ -3,11 +3,12 @@
 This tap is designed specifically for a custom build of NGINX with more module options.
 
 ## How do I install these formule (NGINX Modules)?
+
 Once the tap is installed, you can install `nginx-full`
 with optional [additional modules](https://brew.sh/homebrew-nginx/#modules):
 
 ```bash
-brew tap openresty/brew
+brew tap ironclad/brew
 brew install openresty
 ```
 
@@ -43,18 +44,21 @@ brew link openresty
 You can find the configuration files for openresty under `$HOMEBREW_PREFIX/etc/openresty/` (The default value of `$HOMEBREW_PREFIX` is `/usr/local` and you can check the value of `$HOMEBREW_PREFIX` with `brew --config` command).
 
 ## Documentation
+
 `brew help`, `man brew` or check [Homebrew's documentation](https://github.com/Homebrew/brew/blob/master/docs/README.md).
 
 ## Contributing
+
 Please see the [contributing guide](https://github.com/openresty/homebrew-brew/blob/master/.github/CONTRIBUTING.md).
 
 ## How to submit a new formula
-* Fork this repository on GitHub.
-* Clone to your Mac.
-* Read and look at the other formule here.
-* In your locally cloned `homebrew-nginx` repo, create a new branch: `git checkout --branch my_new_formula`
-* Write/edit your formula (ruby file). Check [Homebrew's documentation](https://github.com/Homebrew/brew/blob/master/docs/README.md) for details.
-* Test it locally! `brew install ./my-new-formula.rb`. Does it install? Note, `./<formula>.rb` will target the local file.
-* `git push --set-upstream origin my-new-formula` to get it into your GitHub fork as a new branch.
-* If you have to change something, add a commit and `git push`.
-* On GitHub, select your new branch and then click the "Pull Request" button.
+
+- Fork this repository on GitHub.
+- Clone to your Mac.
+- Read and look at the other formule here.
+- In your locally cloned `homebrew-nginx` repo, create a new branch: `git checkout --branch my_new_formula`
+- Write/edit your formula (ruby file). Check [Homebrew's documentation](https://github.com/Homebrew/brew/blob/master/docs/README.md) for details.
+- Test it locally! `brew install ./my-new-formula.rb`. Does it install? Note, `./<formula>.rb` will target the local file.
+- `git push --set-upstream origin my-new-formula` to get it into your GitHub fork as a new branch.
+- If you have to change something, add a commit and `git push`.
+- On GitHub, select your new branch and then click the "Pull Request" button.

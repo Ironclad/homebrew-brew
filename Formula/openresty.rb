@@ -13,7 +13,7 @@ class Openresty < Formula
   option "with-slice", "Compile with ngx_http_slice_module"
 
   depends_on "geoip"
-  depends_on "openresty/brew/openresty-openssl111"
+  depends_on "ironclad/brew/openresty-openssl111"
   depends_on "pcre"
   depends_on "postgresql" => :optional
 
@@ -24,8 +24,8 @@ class Openresty < Formula
 
   def install
     # Configure
-    cc_opt = "-I#{HOMEBREW_PREFIX}/include -I#{Formula["pcre"].opt_include} -I#{Formula["openresty/brew/openresty-openssl111"].opt_include}"
-    ld_opt = "-L#{HOMEBREW_PREFIX}/lib -L#{Formula["pcre"].opt_lib} -L#{Formula["openresty/brew/openresty-openssl111"].opt_lib}"
+    cc_opt = "-I#{HOMEBREW_PREFIX}/include -I#{Formula["pcre"].opt_include} -I#{Formula["ironclad/brew/openresty-openssl111"].opt_include}"
+    ld_opt = "-L#{HOMEBREW_PREFIX}/lib -L#{Formula["pcre"].opt_lib} -L#{Formula["ironclad/brew/openresty-openssl111"].opt_lib}"
 
     args = %W[
       -j#{Etc.nprocessors}
