@@ -25,16 +25,6 @@ class RedisAT72 < Formula
     end
   end
 
-  bottle do
-    sha256 cellar: :any,                 arm64_sequoia: "422ceee1d954c13e3ef3e940035fe75f2e2712319b6b5bb1eeed658ded2b12b7"
-    sha256 cellar: :any,                 arm64_sonoma:  "56d106290e90037ede6773cde5c12394eae99668f09224e29bfcd3db5b153771"
-    sha256 cellar: :any,                 arm64_ventura: "1b817d307ec8177b7bcba525278811821fbadf55240213662ec8ab4c1b55f68d"
-    sha256 cellar: :any,                 sonoma:        "3737eb64b386d6db0d669d14f1a7845521005b3c1b05dc28b708d36dc156ee6c"
-    sha256 cellar: :any,                 ventura:       "3f5e3719abcde6fc5bd0d9ca464ef9900c947af9c91b70740f5e95a4d0fdeded"
-    sha256 cellar: :any_skip_relocation, arm64_linux:   "793caff571d28c1ee9f3356b2b38cca3b1ec9a754015aec1ebffcf8d99611c47"
-    sha256 cellar: :any_skip_relocation, x86_64_linux:  "2b4a4dcd5d96ced2bd006de2d3cb98cbc2df5063c271025fd1f9985f1bf04660"
-  end
-
   depends_on "openssl@3"
 
   conflicts_with "valkey", because: "both install `redis-*` binaries"
