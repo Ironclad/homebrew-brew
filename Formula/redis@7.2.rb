@@ -1,4 +1,4 @@
-class Redis < Formula
+class RedisAT72 < Formula
   desc "Persistent key-value database, with built-in net interface"
   homepage "https://redis.io/"
   # NOTE: Do not bump to v7.4+ as license changed to RSALv2+SSPLv1
