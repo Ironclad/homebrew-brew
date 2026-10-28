@@ -1,6 +1,6 @@
 # Homebrew core's clamav 1.5.4, built against openssl@3. Core's openssl@4 build rejects
 # valid database signatures, so freshclam fails. Remove once a ClamAV release supports
-# OpenSSL 4: https://github.com/Cisco-Talos/clamav/issues/1728
+# OpenSSL 4: https://github.com/Cisco-Talos/clamav/pull/1774
 class ClamavIc < Formula
   desc "Anti-virus software"
   homepage "https://www.clamav.net/"
