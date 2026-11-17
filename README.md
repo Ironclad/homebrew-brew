@@ -12,12 +12,6 @@ brew tap ironclad/brew
 brew install openresty
 ```
 
-There is also a debug version of openresty for hard-core developers:
-
-```bash
-brew install openresty-debug
-```
-
 If you already installed OpenResty from homebrew/nginx, please run the following command first:
 
 ```bash
